@@ -1,8 +1,62 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  line-height: 1.6;
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif; /* Replace with your desired font */
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif; /* Replace with your desired font */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif; /* Replace with your desired font */
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif; /* Replace with your desired font */
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* For radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between elements */
+}
+
+label {
+  display: inline-block; /* Make labels inline for horizontal alignment */
 }

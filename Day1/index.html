@@ -7,6 +7,82 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>THIS IS MY DAY 1 CODE</h1>
+    <form method="post" enctype="multipart/form-data">
+      <h2>Resigstration Form</h2>
+      <table>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input type="password" id="password" name="password" required />
+          </td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea id="address" name="address" required></textarea></td>
+        </tr>
+        <tr>
+          <td>Branch:</td>
+          <td>
+            <input type="radio" id="cse" name="branch" value="CSE" />
+            <label for="cse">CSE</label>
+            <input type="radio" id="cse-ds" name="branch" value="CSE-DS" />
+            <label for="cse-ds">CSE-DS</label>
+            <input
+              type="radio"
+              id="cse-aimil"
+              name="branch"
+              value="CSE-AIMIL"
+            />
+            <label for="cse-aimil">CSE-AIMIL</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Languages:</td>
+          <td>
+            <input type="checkbox" id="c" name="languages[]" value="C" />
+            <label for="c">C</label>
+            <input type="checkbox" id="java" name="languages[]" value="Java" />
+            <label for="java">Java</label>
+            <input type="checkbox" id="c++" name="languages[]" value="C++" />
+            <label for="c++">C++</label>
+            <input
+              type="checkbox"
+              id="python"
+              name="languages[]"
+              value="Python"
+            />
+            <label for="python">Python</label>
+            <input type="checkbox" id="ruby" name="languages[]" value="Ruby" />
+            <label for="ruby">Ruby</label>
+            <input
+              type="checkbox"
+              id="other"
+              name="languages[]"
+              value="other"
+            />
+            <label for="other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>DOB:</td>
+          <td><input type="date" id="dob" name="dob" required /></td>
+        </tr>
+        <tr>
+          <td>Upload Profile Pic:</td>
+          <td><input type="file" id="profile_pic" name="profile_pic" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>
